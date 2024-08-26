@@ -1,0 +1,356 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.navbar {
+  height: 80px;
+  background-color: #474e5d;
+  overflow: hidden;
+  position: sticky;
+  z-index: 100;
+  transition: background-color 0.3s ease-in-out;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  user-select: none;
+}
+@media only screen and (max-width: 859px) {
+  .navbar {
+    display: none;
+  }
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+}
+.navlogo {
+  height: 80px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  height: 100%;
+  width: 100%;
+  background-image: url(Images/Logo/ss.png);
+  background-size: cover;
+  background-position: center;
+}
+.navlogo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  filter: brightness(1.1);
+  opacity: 0.8;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.navigation a {
+  font-size: 1.2em;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.navigation a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  bottom: -4px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.navigation .btnLogin-popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+.navigation .btnLogin-popup:hover {
+  background-color: #fff;
+  color: #333;
+}
+.navbar0 {
+  height: 160px;
+  background-color: #474e5d;
+  overflow: hidden;
+  position: sticky;
+  z-index: 100;
+  transition: background-color 0.3s ease-in-out;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+@media only screen and (min-width: 860px) {
+  .navbar0 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 519px) {
+  .navbar0 {
+    display: none;
+  }
+}
+.navbar1 {
+  height: 150px;
+  background-color: #474e5d;
+  overflow: hidden;
+  position: sticky;
+  z-index: 100;
+  transition: background-color 0.3s ease-in-out;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+  text-align: center;
+}
+@media only screen and (min-width: 520px) {
+  .navbar1 {
+    display: none;
+  }
+}
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  background-color: #474e5d;
+  display: block;
+}
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0, 9;
+}
+.socialIcons a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+.socialIcons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+.footerNav {
+  margin: 30px 0;
+}
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+.footerBottom {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p {
+  color: white;
+}
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+.content {
+  height: 100vh;
+  background: #ddd;
+}
+div.container {
+  max-width: 1350px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.upcomming {
+  font-size: 45px;
+  text-transform: uppercase;
+  border-left: 14px solid #474e5d;
+  padding-left: 12px;
+  margin: 18px 8px;
+}
+.container .item {
+  width: 48%;
+  float: left;
+  padding: 0 20px;
+  background: #fff;
+  overflow: hidden;
+  margin: 10px;
+}
+.container .item-right,
+.container .item-left {
+  float: left;
+  padding: 20px;
+}
+.container .item-right {
+  padding: 79px 50px;
+  margin-right: 20px;
+  width: 25%;
+  position: relative;
+  height: 286px;
+  text-align: center;
+}
+.container .item-right .up-border,
+.container .item-right .down-border {
+  padding: 14px 15px;
+  background-color: #ddd;
+  border-radius: 50%;
+  position: absolute;
+}
+.container .item-right .up-border {
+  top: -8px;
+  right: -35px;
+}
+.container .item-right .down-border {
+  bottom: -13px;
+  right: -35px;
+}
+.container .item-right .num {
+  rotate: 270deg;
+  font-size: 50px;
+  text-align: center;
+  color: #111;
+}
+.container .item-right .day,
+.container .item-left .event {
+  color: #555;
+  font-size: 20px;
+  margin-bottom: 9px;
+}
+.container .item-right .day {
+  rotate: 270deg;
+  text-align: center;
+  font-size: 25px;
+}
+.container .item-left {
+  width: 71%;
+  padding: 34px 0px 19px 46px;
+  border-left: 3px dotted #999;
+}
+.container .item-left .title {
+  color: #111;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+.container .item-left .sce {
+  margin-top: 5px;
+  display: block;
+}
+.container .item-left .sce .icon,
+.container .item-left .sce p,
+.container .item-left .loc .icon,
+.container .item-left .loc p {
+  float: left;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  color: #888;
+  margin-bottom: 10px;
+}
+.container .item-left .sce .icon,
+.container .item-left .loc .icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #666;
+}
+.container .item-left .loc {
+  display: block;
+}
+.fix {
+  clear: both;
+}
+.container .item .tickets,
+.booked,
+.cancel {
+  color: #fff;
+  padding: 6px 14px;
+  float: right;
+  margin-top: 10px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+.container .item .tickets {
+  background: #777;
+}
+.container .item .booked {
+  background: #777;
+}
+.container .item .cancel {
+  background: #777;
+}
+.linethrough {
+  text-decoration: line-through;
+}
+@media only screen and (max-width: 1150px) {
+  .container .item {
+    width: 100%;
+    margin-right: 20px;
+  }
+  div.container {
+    margin: 0 20px auto;
+  }
+}
